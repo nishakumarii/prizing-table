@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prizing Table </title>
+    <style>
+
+        :root{
+            --main-color:#3867d6;
+        }
+        
+        *{
+            font-family: 'Nunito', sans-serif;
+            margin:0; padding:0;
+            box-sizing: border-box;
+            outline: none; border:none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: .2s linear;
+        }
+        
+        html{
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-padding-top: 7rem;
+            scroll-behavior: smooth;
+        }
+
+        .price .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            gap:1.5rem;
+        }
+        
+        .price .box-container .box{
+            padding:2rem 0;
+            background:#333;
+            border-radius: .5rem;
+            text-align: center;
+        }
+        
+        .price .box-container .box:hover{
+            transform: scale(1.03);
+        }
+        
+        .price .box-container .box .title{
+            background:var(--main-color);
+            color:#fff;
+            padding:1.5rem 0;
+            font-size: 2rem;
+        }
+        
+        .price .box-container .box .amount{
+            color:#fff;
+            padding-top: 2rem;
+            font-size: 4rem;
+        }
+        
+        .price .box-container .box ul{
+            list-style-type: none;
+            padding:1rem 0;
+        }
+        
+        .price .box-container .box ul li{
+            font-size: 1.5rem;
+            color:#eee;
+            padding:1rem 0;
+        }
+        
+        .price .box-container .box ul li i{
+            color:var(--main-color);
+            padding-right: .5rem;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <section class="price" id="price">
+
+        <h1 class="heading" style="text-align: center;"> our <span>price</span> </h1>
+        <br><br>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <h3 class="title"> Basic weddings </h3>
+            <a style="text-decoration: none;" href=" "> <h3 class="amount">Rs-6,80,000</h3></a>
+                <ul>
+                    <li><i class="fas fa-check"></i>full services</li>
+                    <li> <i class="fas fa-check"></i> decorations </li>
+                    <li> <i class="fas fa-check"></i> music and photos </li>
+                    <li> <i class="fas fa-check"></i> food and drinks </li>
+                    <li> <i class="fas fa-check"></i> invitation card </li>
+                    <li> <i class="fas fa-check"></i> Haldi & Mehandi </li>
+                </ul>
+                <a style="text-decoration: none;" href=" " class="btn">check out</a>
+            </div>
+    
+            <div class="box">
+                <h3 class="title"> Traditional Wedding </h3>
+                <h3 class="amount">Rs-20,40,000</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i>full services</li>
+                    <li> <i class="fas fa-check"></i> decorations </li>
+                    <li> <i class="fas fa-check"></i> music and photos </li>
+                    <li> <i class="fas fa-check"></i> food and drinks </li>
+                    <li> <i class="fas fa-check"></i> invitation card </li>
+                    <li> <i class="fas fa-check"></i> Haldi & Mehandi </li>
+                </ul>
+                <a style="text-decoration: none;" href=" " class="btn">check out</a>
+            </div>
+    
+            <div class="box">
+                <h3 class="title"> Royal Wedding</h3>
+                <h3 class="amount">Rs-50,00,000</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i>full services</li>
+                    <li> <i class="fas fa-check"></i> decorations </li>
+                    <li> <i class="fas fa-check"></i> music and photos </li>
+                    <li> <i class="fas fa-check"></i> food and drinks </li>
+                    <li> <i class="fas fa-check"></i> invitation card </li>
+                    <li> <i class="fas fa-check"></i> Haldi & Mehandi </li>
+                </ul>
+                <a style="text-decoration: none;" href=" " class="btn">check out</a>
+            </div>
+        </div>
+    
+    
+    </section>
+    
+</body>
+</html>
